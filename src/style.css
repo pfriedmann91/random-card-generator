@@ -1,5 +1,70 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-body{
-    background: white;
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+.top-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    transform: rotate(180deg);
+}
+
+.corazones, .diamantes {
+    color: red;
+}
+
+.picas, .tréboles {
+    color: black;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #c7cf52;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4b984f;
 }
